@@ -68,7 +68,7 @@
     methods: {
       async submitForm() {
         try {
-            let url = 'https://user-app-1.vercel.app//api/usuarios';
+            let url = 'https://user-app-1.vercel.app/api/usuarios';
     let method = 'POST'; // Por defecto, crea un nuevo usuario
 
     // Si hay un ID en el formulario, se trata de una edición
@@ -109,7 +109,7 @@
       },
       async obtenerUsuarios() {
         try {
-          const response = await fetch('https://user-app-1.vercel.app//api/usuarios');
+          const response = await fetch('https://user-app-1.vercel.app/api/usuarios');
           if (!response.ok) {
             throw new Error('Error al obtener los usuarios');
           }
@@ -128,7 +128,7 @@
         try {
           // Lógica para eliminar un usuario por su ID
           console.log('Eliminar usuario con ID:', id);
-          await fetch(`https://user-app-1.vercel.app//api/usuarios/${id}`, {
+          await fetch(`https://user-app-1.vercel.app/api/usuarios/${id}`, {
             method: 'DELETE'
           });
           // Actualiza la lista de usuarios después de eliminar uno
