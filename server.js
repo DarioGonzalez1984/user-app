@@ -10,10 +10,10 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'node-api'
+  host: 'sql10.freesqldatabase.com',
+  user: 'sql10689641',
+  password: 'jrTvXsZSgL',
+  database: 'sql10689641'
 });
 
 connection.connect((err) => {
